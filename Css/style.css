@@ -1,0 +1,367 @@
+/* IMPORTANDO FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* PÁGINA INICIAL */
+
+body{
+    background: rgb(0,0,0); 
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 52%, rgba(59,59,59,1) 100%);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cabecalho{
+    position: relative;
+    width: 1220px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.cabecalho__menu{
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+.cabecalho ul{
+    display: flex;
+}
+
+.cabecalho li{
+    display: inline;
+	margin: 0 0 0 32px;
+}
+
+.cabecalho__menu__link{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.35rem;
+}
+
+.escolhas{
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 50px 0;
+}
+
+.escolhas__lista__itens{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ffffff;
+	border-radius: 10px; 
+}
+
+
+.escolhas__lista__itens__titulo{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.escolhas__lista__itens__titulo::first-line{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagem{
+    margin-top: 15px;
+    padding: 0px;
+    width: 60%;
+}
+
+.texto-descricao{
+    color: white;
+    font-size: 18px;
+    padding: 15px 0px;
+    text-align: justify;
+}
+
+.formulario{
+    width: 940px;
+    margin-top: 15%;
+    margin-left: 14px;
+    border: none;
+}
+
+.formulario legend{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.formulario__texto{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.entrada{
+    display: block;
+    margin-bottom: 20px;
+    padding: 0.6rem 1.6rem;
+    width: 50%;
+}
+
+.botao{
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 1.13rem;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: darkorange;
+}
+
+footer{
+    margin: 150px 0px 70px 0;
+    font-size: 1.25rem;
+    text-align: center;
+    color: red;
+}
+
+/* PAGINA O QUE É O XADREZ  e ENXADRISTAS*/
+
+.cabecalho__home{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.35rem;
+    position: absolute;
+    top: 90px;
+    left: 300px;
+}
+
+.cabecalho__home__imagem{
+    margin-left: 8px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.conteudo__apresentacao{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.conteudo__apresentacao__texto{
+    font-family: 'Krona One', sans-serif;
+    color: white;
+    width: 50%;
+    padding: 0 5%;
+    text-align: justify;
+}
+
+.tutorial{
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+/* PAGINA CURIOSIDADES */
+
+.informacao{
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 50px 0;
+}
+
+.informacao__secao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informacao__secao__titulo, .informacao__secao__texto{
+    color: white;
+}
+
+.informacao__secao__titulo{
+    font-family: 'Krona One', 'sans-serif';
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-top: 5%;
+}
+
+.informacao__secao__texto{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2rem;
+    text-align: justify;
+    font-size: 1rem;
+    margin-bottom: 10%;
+}
+
+.informacao__secao__tutorial{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    opacity: 0.5;
+}
+
+
+
+/* Responsividade HOME */
+@media (max-width: 1200px){
+    .cabecalho{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .cabecalho__logo{
+        max-width: 120px;
+        max-height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .cabecalho__menu{ 
+       width: auto;
+       position:static;
+    }
+
+    .cabecalho li{
+        margin: 0;
+    }
+
+    .cabecalho__menu__link{
+        font-size: 1rem;
+    }
+
+    .cabecalho__menu__link__texto{
+        margin: 5px 0 0 15px;
+    }
+
+    .escolhas{
+        width: auto;
+        margin-left: 15%;
+    }
+
+    .escolhas__lista{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .escolhas__lista__itens{
+        box-sizing: content-box;
+        width: 70%;
+        margin: 0 0;
+
+    }
+
+    .formulario{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin-right: 5%;
+    }
+
+    .entrada{
+        width: 80%;
+    }
+
+    .botao{
+        width: 60%;
+    }
+
+    footer q{
+        font-size: 1.4rem;
+    }
+
+    .nome{
+        margin: 1rem 0;
+        font-size: 1.4rem;
+    }
+}
+
+
+
+/* Responsividade XADREZ e ENXADRISTAS*/
+@media(max-width: 1200px){
+    .cabecalho__home__principal, .cabecalho__home{
+        position: static;
+        text-align: center;
+    }
+
+    .cabecalho__menu__link__texto{
+        margin: 5px 0 0 15px;
+    }
+
+    .conteudo{
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .conteudo__apresentacao{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 1rem;
+    }
+
+    .conteudo__apresentacao__imagem{
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    .conteudo__apresentacao__texto{
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+
+    .tutorial{
+        margin: 2rem 1rem;
+        width: 100%;
+    }
+
+}
+
+
+
+/* Responsividade CURIOSIDADES*/
+@media(max-width: 1200px){
+    .informacao{
+        width: 80%;
+        margin-top: 2rem;
+        box-sizing: content-box;
+    }
+}
+

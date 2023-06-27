@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>Descobrindo o xadrez</title>
+    <link rel="icon" href="./Arquivos/faviicons.png">
+</head>
+
+<body>
+    <header>
+        <section class="cabecalho">
+            <div>
+                <img class="cabecalho__logo" src="Arquivos/logo.png" alt="Icone de um rei e dois peões ao seu lado">
+            </div>
+            
+            <nav class="cabecalho__menu">
+                <ul>
+                    <li>
+                        <a class="cabecalho__menu__link" href="https://github.com/Flor-Luan" target="_blank">
+                            <img class="cabecalho__menu__link__imagem" style="margin: 0 10px 0 32px;"
+                                src="./Arquivos/LogoGithub.png" alt="Logo do Git hub">
+                            <p class="cabecalho__menu__link__texto">Flor-Luan</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cabecalho__menu__link" href="https://www.instagram.com/gust.flor/" target="_blank">
+                            <img style="margin: 0 10px 0 23px;" src="./Arquivos/instagram.png" alt="Logo do Instagram">
+                            <p class="cabecalho__menu__link__texto">Gust.flor</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cabecalho__menu__link" href="https://www.linkedin.com/in/luan-flor-2287b2262/"
+                            target="_blank">
+                            <img style="margin: 0 10px 0 12px;" src="./Arquivos/LogoIinkedin.png"
+                                alt="Logo do linkedin">
+                            <p class="cabecalho__menu__link__texto">Luan Flor</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
+    <main class="escolhas">
+        <ul class="escolhas__lista">
+            <a href="xadrez.html">
+                <li class="escolhas__lista__itens">
+                    <h2 class="escolhas__lista__itens__titulo">O que é o xadrez?</h2>
+                    <img class="imagem" src="Arquivos/torre.png" alt="Icone de uma torre do xadrez">
+                    <p class="texto-descricao">O xadrez é um jogo disputado entre dois jogadores que simula uma guerra
+                        entre dois reinos. O jogo envolve muita entratégias para ganhar do seu adversário.</p>
+                </li>
+            </a>
+
+            <a href="enxadristas.html">
+                <li class="escolhas__lista__itens">
+                    <h2 class="escolhas__lista__itens__titulo">Enxadrista, o que é?</h2>
+                    <img class="imagem" src="Arquivos/rei.png" alt="Icone de um rei e dois peões ao seu lado">
+                    <p class="texto-descricao">Enxadrista é a maneira de se chamar um praticante de xadrez. Nesse tópico
+                        você verá os principais enxadristas e campeões mundiais do xadrez.</p>
+                </li>
+
+                <a href="curiosidades.html">
+                    <li class="escolhas__lista__itens">
+                        <h2 class="escolhas__lista__itens__titulo">Curiosidades</h2>
+                        <img class="imagem" src="Arquivos/interrogacao.png" alt="">
+                        <p class="texto-descricao">O xadrez não é apenas seguir as regras do tabuleiro, ele envolve
+                            muitas coisas do nosso dia a dia. Está curioso? Venha saber mais!!</p>
+                    </li>
+                </a>
+        </ul>
+
+        <form>
+            <fieldset class="formulario">
+                <legend>Nos ajude a melhorar!!</legend>
+
+                <label for="nomesobrenome" class="formulario__texto">Nome e sobrenome</label>
+                <input class="entrada" type="text" id="nomesobrenome" required placeholder="Joãozinho da Silva">
+
+                <label for="opiniao" class="formulario__texto">Qual sua opinião sobre o site?</label>
+                <textarea class="entrada" id="opiniao" cols="70" rows="10" required
+                    placeholder="Uau!! Esse site é muito bom!!"></textarea>
+
+                <input class="botao" type="submit" value="Enviar formulário">
+            </fieldset>
+        </form>
+    </main>
+
+
+    <footer>
+        <p><i><q>O xadrez não é apenas um esporte, mas também uma arte e uma ciência.</q></i></p>
+        <p class="nome"><strong>Garry Kasparov</strong></p>
+    </footer>
+</body>
+
+</html>
